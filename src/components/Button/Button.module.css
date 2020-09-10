@@ -1,0 +1,32 @@
+button {
+  width: 100%;
+  color: black;
+  background-color: rgb(243, 174, 45);
+  font-size: 25px;
+  border-radius: 0%;
+  outline: none;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+.Button {
+  display: flex;
+  width: 25%;
+}
+
+.wide {
+  display: flex;
+  width: 50%;
+}
+
+.color {
+  background-color: rgb(241, 241, 241);
+}
+
+.color:hover {
+  background-color: rgb(231, 230, 230);
+}

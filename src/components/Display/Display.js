@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classes from './Display.module.css';
 
 const Display = ({ result }) => (
-  <div>
+  <div className={classes.Display}>
     <p>
-      Result:
       {result}
     </p>
   </div>
