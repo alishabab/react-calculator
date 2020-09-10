@@ -7,9 +7,9 @@ const App = () => (
   <div>
     <header>
       <h1>Calculator App</h1>
-      <Display result="0" />
-      <ButtonPanel />
     </header>
+    <Display result="0" />
+    <ButtonPanel />
   </div>
 );
 
