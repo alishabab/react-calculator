@@ -4,6 +4,7 @@ import ButtonPanel from '../ButtonPanel/ButtonPanel';
 import Display from '../Display/Display';
 import classes from './App.module.css';
 import calculate from '../../logic/calculate';
+import renderResult from '../../helpers/renderResult';
 
 calculate({ total: null, next: null, operation: null }, null);
 
@@ -26,7 +27,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={classes.App}>
-        <Display result="0" />
+        <Display result={renderResult(this.state)} />
         <ButtonPanel onClick={this.handleClick} />
       </div>
     );
