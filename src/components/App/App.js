@@ -27,7 +27,7 @@ class App extends React.Component {
     return (
       <div className={classes.App}>
         <Display result="0" />
-        <ButtonPanel />
+        <ButtonPanel onClick={this.handleClick} />
       </div>
     );
   }
