@@ -2,7 +2,8 @@
 
 # Calculator in ReactJS
 
-> Calculator App developed in ReactJS
+![screenshot](./screenshot.PNG)
+> Calculator App developed in ReactJS. There are three components - A root App component, ButtonPanel and Button. State is managed by App component. User can click on a number or operator to perform mathematical operations.
 
 ## Built With
 
