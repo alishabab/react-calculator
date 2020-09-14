@@ -7,11 +7,30 @@ import calculate from '../../logic/calculate';
 
 calculate({ total: null, next: null, operation: null }, null);
 
-const App = () => (
-  <div className={classes.App}>
-    <Display result="0" />
-    <ButtonPanel />
-  </div>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    const newState = calculate(this.state, buttonName);
+    this.setState(newState);
+  }
+
+  render() {
+    return (
+      <div className={classes.App}>
+        <Display result="0" />
+        <ButtonPanel />
+      </div>
+    );
+  }
+}
 
 export default App;
