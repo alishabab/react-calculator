@@ -6,8 +6,6 @@ import classes from './App.module.css';
 import calculate from '../../logic/calculate';
 import renderResult from '../../helpers/renderResult';
 
-calculate({ total: null, next: null, operation: null }, null);
-
 class App extends React.Component {
   constructor(props) {
     super(props);
